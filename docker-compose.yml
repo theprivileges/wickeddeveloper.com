@@ -1,0 +1,9 @@
+version: '3'
+services: 
+    jekyll_serve:
+        image: jekyll/jekyll:3.8.5 # match version in gh-pages
+        volumes: 
+            - '.:/srv/jekyll'
+        ports: 
+            - 4000:4000
+        command: 'jekyll serve -l' # Builds site and reloads browser
