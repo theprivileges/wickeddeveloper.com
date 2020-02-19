@@ -24,7 +24,8 @@ github_username:  theprivileges
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
+remote_theme: broccolini/swiss
 plugins:
   - jekyll-feed
 
