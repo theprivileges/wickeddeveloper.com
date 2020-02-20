@@ -1,6 +1,6 @@
 version: '3'
 services: 
-    jekyll_serve:
+    wickeddeveloper:
         image: jekyll/jekyll:3.8.5 # match version in gh-pages
         volumes: 
             - '.:/srv/jekyll'
