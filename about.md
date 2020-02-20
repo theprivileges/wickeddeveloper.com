@@ -4,15 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+{% avatar theprivileges size=200 %}
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm a Brazilian who got lost in Montana.  I am passionate about privacy and the web.  I currently work at [Submittable.com](https://www.submittable.com?ref=luiz) as a Senior Software Engineer.  Whenever I am not on the computer you can find me: fly fishing, practicing Yoga, practicing Brazilian Jiu-Jitsu, or doing one of the many outdoor activities in Montana. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
