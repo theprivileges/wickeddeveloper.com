@@ -26,6 +26,18 @@ github_username:  theprivileges
 social_link: "medium"
 social_username: "theprivileges"
 
+# Font Matter Defaults
+defaults:
+  - 
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      author: "Luiz Lopes"
+      layout: "post"
+
+
+
 # Build settings
 markdown: kramdown
 # theme: minima
