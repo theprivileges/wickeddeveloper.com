@@ -1,8 +1,6 @@
 ---
-layout: post
 title:  "Welcome to my blog"
 date:   2020-02-09 17:48:44 -0700
-author: "Luiz Lopes"
 categories: random
 ---
 
