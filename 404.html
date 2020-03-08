@@ -15,11 +15,25 @@ sitemap: false
     line-height: 1;
     letter-spacing: -1px;
   }
+  article {
+    display: block;
+    text-align: left;
+    width: 500px;
+    margin: 0 auto; 
+  }
+  span[data-frown]:hover { margin-left: 0.1em; transform: rotate(90deg) translate(50%); display:inline-block; color: #bbb; }
 </style>
 
 <div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <article>
+  <h1>Not found <span data-frown>:(</span></h1>
+  <div>
+    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <p>It looks like this was the result of either:</p>
+    <ul>
+      <li>a mistyped address</li>
+      <li>an out-of-date link</li>
+    </ul>
+  </div>
+  </article>
 </div>
