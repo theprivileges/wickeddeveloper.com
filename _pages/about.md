@@ -1,6 +1,7 @@
 ---
 title: About
 permalink: /about/
+author_profile: false
 ---
 
 {% avatar theprivileges size=200 %}
