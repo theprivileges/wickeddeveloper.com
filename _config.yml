@@ -19,6 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Random musings of a Senior Software Engineer living in Missoula, Montana.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wickeddeveloper.com" # the base hostname & protocol for your site, e.g. http://example.com
+locale: "en-US"
+name: "Luiz Lopes"
 search: true
 
 # Minimal Mistakes Skin
@@ -26,6 +28,16 @@ minimal_mistakes_skin: contrast
 
 # Social
 github_username: theprivileges
+
+social:
+  name: "Luiz Lopes"
+  links:
+    - https://github.com/theprivileges
+    - https://luizlopes.io
+    - https://stackoverflow.com/story/luizlopes
+    - https://angel.co/luiz-lopes
+    - https://dev.to/theprivileges
+    - https://keybase.io/theprivileges
 
 # GitHub Metadata — https://github.com/jekyll/github-metadata
 repository: theprivileges/wickeddeveloper.com # the GitHub repo name for your project
@@ -63,7 +75,16 @@ plugins:
 
 author:
   name: "Luiz Lopes"
-
+  bio: "Born helpless, nude and unable to provide for myself, I write code in order to overcome the aforementioned predicaments."
+  location: Missoula, MT
+  avatar: "assets/images/profile.png"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://wickeddeveloper.com"
+    - label: "Resume"
+      icon: "fas fa-fw fa-paperclip"
+      url: "https://luizlopes.io"
 footer:
   links:
     - label: "Github"
@@ -83,8 +104,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false 
-      share: false
       related: true
   # _pages
   - scope:
@@ -92,7 +111,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
 
 category_archive:
   type: liquid
