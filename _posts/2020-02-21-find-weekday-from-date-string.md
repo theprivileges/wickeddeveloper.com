@@ -1,8 +1,16 @@
 ---
 title: Use Intl.DateTimeFormat To Find Weekday From a Given Date String
 description: Use the Intl.DateTimeFormat constructor, to find the weekday of a given date string.
-tags: tutorial, javascript, beginners, i18n
-cover_image: https://thepracticaldev.s3.amazonaws.com/i/xrnkvy42s5n1snu7htgb.jpeg
+date: 2019-05-30 22:17:33
+tags:
+  - tutorial
+  - javascript
+  - beginners
+  - i18n
+categories:
+  - development
+header:
+  image: https://thepracticaldev.s3.amazonaws.com/i/xrnkvy42s5n1snu7htgb.jpeg
 ---
 
 I've recently been introduced to the `Intl` object, which is used as the namespace for the [ECMAScript Internationalization API](https://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html).  It has a neat object called `DateTimeFormat` which can be used to format a date value into locale specific strings. 
