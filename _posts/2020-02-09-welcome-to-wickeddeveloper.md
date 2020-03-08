@@ -1,7 +1,8 @@
 ---
 title:  "Welcome to my blog"
 date:   2020-02-09 17:48:44 -0700
-categories: random
+categories: 
+    - blog 
 ---
 
 After many years of recommending younger developer to start their own blog, I am finally taking my own advice. 

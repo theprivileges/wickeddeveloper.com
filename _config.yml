@@ -19,29 +19,30 @@ description: >- # this means to ignore newlines until "baseurl:"
   Random musings of a Senior Software Engineer living in Missoula, Montana.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wickeddeveloper.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: wickeddeveloper.com # the GitHub repo name for your project
-github_username:  theprivileges
+search: true
 
-# Optional social link
-social_link: "medium"
-social_username: "theprivileges"
+# Minimal Mistakes Skin
+minimal_mistakes_skin: contrast
 
-# Font Matter Defaults
-defaults:
-  - 
-    scope: 
-      path: ""
-      type: "posts"
-    values:
-      author: "Luiz Lopes"
-      layout: "post"
+# Social
+github_username: theprivileges
 
+# GitHub Metadata — https://github.com/jekyll/github-metadata
+repository: theprivileges/wickeddeveloper.com # the GitHub repo name for your project
+
+
+# Outputting
+permalink: /:categories/:title
+paginate: 5
+paginate_path: /page:num/
+timezone: america/denver
+
+include:
+  - _pages
 
 
 # Build settings
 markdown: kramdown
-# theme: minima
-#remote_theme: broccolini/swiss
 remote_theme: "mmistakes/minimal-mistakes@4.18.1"
 plugins:
   - jekyll-avatar
@@ -59,3 +60,43 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+author:
+  name: "Luiz Lopes"
+
+footer:
+  links:
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/theprivileges"
+    - label: "StackOverflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/story/luizlopes"
+
+# Font Matter Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false 
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
