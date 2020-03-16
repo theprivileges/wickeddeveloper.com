@@ -38,6 +38,8 @@ social:
     - https://angel.co/luiz-lopes
     - https://dev.to/theprivileges
     - https://keybase.io/theprivileges
+    - https://codesandbox.io/u/theprivileges
+    - https://codepen.io/theprivileges
 
 # GitHub Metadata — https://github.com/jekyll/github-metadata
 repository: theprivileges/wickeddeveloper.com # the GitHub repo name for your project
@@ -57,9 +59,17 @@ include:
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.18.1"
 plugins:
+  - jemoji
+  - jekyll-remote-theme
   - jekyll-avatar
   - jekyll-feed
+  - jekyll-mentions
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-github-metadata
+  - jekyll-seo-tag
   - jekyll-include-cache 
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -80,13 +90,11 @@ author:
   avatar: "assets/images/profile.png"
   links:
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-link"
       url: "https://wickeddeveloper.com"
-    - label: "Resume"
+    - label: "Résumé"
       icon: "fas fa-fw fa-paperclip"
       url: "https://luizlopes.io"
-footer:
-  links:
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/theprivileges"
@@ -112,6 +120,11 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # assets
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
 
 category_archive:
   type: liquid
