@@ -1,0 +1,26 @@
+// custom button colors
+.btn {
+    $buttoncolors:
+    (echojs, #af1d1d),
+    (reddit, #ff4500),
+    (hackernews, #ff4000);
+    @each $buttoncolor, $color in $buttoncolors {
+        &--#{$buttoncolor} {
+            @include yiq-contrasted($color);
+            @if ($buttoncolor == inverse) {
+            border: 1px solid $border-color;
+            }
+            @if ($buttoncolor == light-outline) {
+            border: 1px solid #fff;
+            }
+
+            &:visited {
+            @include yiq-contrasted($color);
+            }
+
+            &:hover {
+            @include yiq-contrasted(mix(#000, $color, 20%));
+            }
+        }
+    }
+}
