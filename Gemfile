@@ -36,6 +36,7 @@ group :jekyll_plugins do
   gem 'jekyll-optional-front-matter', '0.3.2'
   gem 'jekyll-titles-from-headings', '0.5.3'
   gem "jekyll-include-cache"
+  gem "jekyll-compose"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
