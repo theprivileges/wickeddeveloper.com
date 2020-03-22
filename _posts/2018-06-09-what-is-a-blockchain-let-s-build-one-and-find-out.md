@@ -4,7 +4,7 @@ description: A presentation given at Big Sky Dev Con 2018 where I built a rudime
 date: 2018-06-09 00:00 +0000
 header:
     show_overlay_excerpt: false
-    overlay_image: assets/images/bsdc/header.jpeg
+    overlay_image: assets/images/bsdc/header.jpg
     caption: "Photo by [@BigSkyDevCon](https://twitter.com/BigSkyDevCon/status/1005463822755217413/photo/1)"
 categories:
     - development
