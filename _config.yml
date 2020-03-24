@@ -103,6 +103,17 @@ author:
       icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/story/luizlopes"
 
+# jekyll-compose defaults
+jekyll_compose:
+ default_front_matter:
+  posts:
+    layout: single
+    header:
+      overlay_color: "#333"
+      show_overlay_exerpt: false
+  drafts:
+    layout: single
+
 # Font Matter Defaults
 defaults:
   # _posts
