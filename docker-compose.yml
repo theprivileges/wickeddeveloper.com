@@ -2,6 +2,8 @@ version: '3'
 services: 
     wickeddeveloper:
         image: jekyll/jekyll:3.8.5 # match version in gh-pages
+        environment: 
+            - TZ=America/Denver
         volumes: 
             - '.:/srv/jekyll'
         ports: 
