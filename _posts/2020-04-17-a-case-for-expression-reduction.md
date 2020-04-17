@@ -3,13 +3,15 @@ title: A case for expression reduction
 description: A case for assigning complex condition statements to a variable, so that
   your code becomes easier to grok.
 header:
-  overlay_color: "#333"
+  overlay_image: assets/images/development/header.jpg
+  caption: Photo by [Arnold Francisca](https://unsplash.com/@clark_fransa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/staring-at-laptop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
   show_overlay_excerpt: false
 category:
 - development
 tags:
 - javascript
 - opinion
+date: 2020-04-17 23:49 +0000
 ---
 As a software developer you will inevitably have to debug some piece of code you wrote months if not years ago, or code from a colleague that is no longer part of your team.  As you step through some routine you notice an array of conditional statements with complicated conditional expressions. As you search for the bug in the code you'll end up noticing that you can't hold all of the values in your head.  You can no longer remember what a particular value means or what it points to. 
 
