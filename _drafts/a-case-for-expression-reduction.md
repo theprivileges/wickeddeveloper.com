@@ -1,16 +1,16 @@
 ---
 title: A case for expression reduction
-description: A case for assigning complex condition statements to a variable, so that your code becomes easier to grok.
+description: A case for assigning complex condition statements to a variable, so that
+  your code becomes easier to grok.
 header:
-    overlay_color: "#333"
-    show_overlay_excerpt: false
+  overlay_color: "#333"
+  show_overlay_excerpt: false
 category:
-    - development
+- development
 tags:
-    - javascript
-    - opinion
+- javascript
+- opinion
 ---
-
 As a software developer you will inevitably have to debug some piece of code you wrote months if not years ago, or code from a colleague that is no longer part of your team.  As you step through some routine you notice an array of conditional statements with complicated conditional expressions. As you search for the bug in the code you'll end up noticing that you can't hold all of the values in your head.  You can no longer remember what a particular value means or what it points to. 
 
 I have found that creating boolean variables that hold the value of an expensive or complicated expression makes it easier to read and understand code. 
