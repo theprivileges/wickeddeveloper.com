@@ -1,5 +1,5 @@
 ---
-title: On complex condition statements
+title: A case for expression reduction
 description: A case for assigning complex condition statements to a variable, so that your code becomes easier to grok.
 header:
     overlay_color: "#333"
@@ -33,7 +33,7 @@ function getDrinkEmoji(drink) {
 
 Reading through code like that requires you to hold quite a lot in your head.
 
-Now let's look at the same code but having assigned the condition to a variable.
+Now let's look at the same code but having assigned the expression to a variable.
 
 ```js
 function getDrinkEmoji(drink) {
@@ -50,7 +50,8 @@ function getDrinkEmoji(drink) {
 }
 ```
 
-Here we can more quickly understand what the conditions inside of the `if` and `else if` are testing for. You can also quickly accertain what the actual conditinal expression is resolving to (e.g. `isCoffee`).
+Here we can more quickly understand what the expressions inside of the `if` and `else if` are evaluating to.
+
 <div class="notice--info">
 :pushpin: You may also prefix your variables with words like <code>has</code>, <code>should</code>, <code>was</code>, etc.
 </div>
@@ -84,10 +85,14 @@ We had to execute the expensive computation of testing if the `drinks` include a
 
 Conditional statements are an invaluable tools in software development, they provide us with flow control to determine the output of our programs.  You'll inevitably run across them when writing and reading code.  If you are the author of the code, or reading code that you have control over, do yourself a favor and assign your expensive and complicated condition statements to variables with meaningful names.  Doing so will free up space in your head and your code will be much easier to read and understand. 
 
-## Resources
+## Links
 
 - [JavaScript — Conditional Operators](https://javascript.info/ifelse)
 - [Conditional (computer programming)](https://en.wikipedia.org/wiki/Conditional_(computer_programming))
 - [How To Write Conditional Statements in JavaScript](https://www.digitalocean.com/community/tutorials/how-to-write-conditional-statements-in-javascript)
 - [Conditional Execution in C++](https://cal-linux.com/tutorials/conditionals.html)
 - [Predicate (mathematical logic)](https://en.wikipedia.org/wiki/Predicate_%28mathematical_logic%29)
+
+---
+
+__Thanks__ to @nicholascloud for reading a draft of this post, and for giving this pattern a name (_expression reduction_).
