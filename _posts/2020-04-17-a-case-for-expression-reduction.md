@@ -11,7 +11,8 @@ category:
 tags:
 - javascript
 - opinion
-date: 2020-04-17 23:49 +0000
+date: 2020-04-19 13:10 +0700
+classes: wide
 ---
 As a software developer you will inevitably have to debug some piece of code you wrote months if not years ago, or code from a colleague that is no longer part of your team.  As you step through some routine you notice an array of conditional statements with complicated conditional expressions. As you search for the bug in the code you'll end up noticing that you can't hold all of the values in your head.  You can no longer remember what a particular value means or what it points to. 
 
