@@ -11,21 +11,30 @@ category:
 tags:
 - javascript
 - opinion
-date: 2020-04-17 23:49 +0000
+date: 2020-04-19 13:10 +0700
+classes: wide
 ---
 As a software developer you will inevitably have to debug some piece of code you wrote months if not years ago, or code from a colleague that is no longer part of your team.  As you step through some routine you notice an array of conditional statements with complicated conditional expressions. As you search for the bug in the code you'll end up noticing that you can't hold all of the values in your head.  You can no longer remember what a particular value means or what it points to. 
 
 I have found that creating boolean variables that hold the value of an expensive or complicated expression makes it easier to read and understand code. 
 
-Let's look at a trivial piece of code, and see how assigning complex conditions to a variable makes it much easier to understand and read the code. _Keep in mind this code is not something you'd use in production, I'm only using this to illustrate the point._
+Let's look at a trivial piece of code, written in JavaScript, and see how assigning complex conditions to a variable makes it much easier to understand and read the code. _Keep in mind this code is not something you'd use in production, I'm only using this to illustrate the point._
 
 Suppose there is a `function` that takes an argument called `drink` and inside of this function we check what type of drink it is and return an emoji of a coffee, tea, or milk. 
 
 ```js
+/* Assume COFFEE, CAFE, LATE, MOCHA, TEA, etc are imported into this module. */
+
 function getDrinkEmoji(drink) {
-    if (drink === COFFEE || drink === CAFE || drink === LATE || drink === MOCHA) {
+    if (drink === COFFEE || 
+        drink === CAFE || 
+        drink === LATE || 
+        drink === MOCHA) {
         return '☕';
-    } else if (drink === TEA || drink === BLACK_TEA || drink === GREEN_TEA || drink === OOLONG_TEA) {
+    } else if (drink === TEA || 
+               drink === BLACK_TEA || 
+               drink === GREEN_TEA || 
+               drink === OOLONG_TEA) {
         return '🍵';
     } else {
         return '🥛';
@@ -39,8 +48,14 @@ Now let's look at the same code but having assigned the expression to a variable
 
 ```js
 function getDrinkEmoji(drink) {
-    const isCoffee = drink === COFFEE || drink === CAFE || drink === LATE || drink === MOCHA;
-    const isTea = drink === TEA || drink === BLACK_TEA || drink === GREEN_TEA || drink === OOLONG_TEA;
+    const isCoffee = drink === COFFEE || 
+                     drink === CAFE || 
+                     drink === LATE || 
+                     drink === MOCHA;
+    const isTea = drink === TEA || 
+                  drink === BLACK_TEA || 
+                  drink === GREEN_TEA || 
+                  drink === OOLONG_TEA;
 
     if (isCoffee) {
         return '☕';
@@ -64,8 +79,14 @@ In this next example, our `function` receives an array of `drinks`, we use the [
 
 ```js
 function getDrinksEmoji(drinks) {
-    const hasCoffee = drinks.some(drink => drink === COFFEE || drink === CAFE || drink === LATE || drink === MOCHA);
-    const hasTea = drinks.some(drink => drink === TEA || drink === BLACK_TEA || drink === GREEN_TEA || drink === OOLONG_TEA);
+    const hasCoffee = drinks.some(drink => drink === COFFEE || 
+                                           drink === CAFE || 
+                                           drink === LATE || 
+                                           drink === MOCHA);
+    const hasTea = drinks.some(drink => drink === TEA ||
+                                        drink === BLACK_TEA || 
+                                        drink === GREEN_TEA || 
+                                        drink === OOLONG_TEA);
     const hasCoffeeAndTea = hasCoffee && hasTea;
 
     if (hasCoffeeAndTea) {
@@ -97,4 +118,4 @@ Conditional statements are an invaluable tools in software development, they pro
 
 ---
 
-__Thanks__ to @nicholascloud for reading a draft of this post, and for giving this pattern a name (_expression reduction_).
+__Thanks__ to Greg Timmerman, and @nicholascloud for reading a draft of this post. @nicholascloud also gave this pattern a name (_expression reduction_).
