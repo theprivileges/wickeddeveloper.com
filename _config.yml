@@ -16,7 +16,7 @@
 title: Wicked Developer
 email: luiz@wickeddeveloper.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Random musings of a Senior Software Engineer living in Missoula, Montana.
+  Random musings of a Software Engineer living in Missoula, Montana.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wickeddeveloper.com" # the base hostname & protocol for your site, e.g. http://example.com
 locale: "en-US"
@@ -37,11 +37,11 @@ social:
     - https://stackoverflow.com/story/luizlopes
     - https://angel.co/luiz-lopes
     - https://dev.to/theprivileges
-    - https://keybase.io/theprivileges
     - https://codesandbox.io/u/theprivileges
     - https://codepen.io/theprivileges
     - https://jsfiddle.net/user/theprivileges
     - https://www.hackerrank.com/theprivileges
+    - https://twitter.com/theprivileges
 
 # GitHub Metadata — https://github.com/jekyll/github-metadata
 repository: theprivileges/wickeddeveloper.com # the GitHub repo name for your project
@@ -59,7 +59,7 @@ include:
 
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.18.1"
+remote_theme: "mmistakes/minimal-mistakes@4.22.0"
 plugins:
   - jemoji
   - jekyll-remote-theme
@@ -87,7 +87,7 @@ plugins:
 
 author:
   name: "Luiz Lopes"
-  bio: "Born helpless, nude and unable to provide for myself, I write code in order to overcome the aforementioned predicaments."
+  bio: "Born helpless, nude and unable to provide for myself, I BUIDL in order to overcome the aforementioned predicaments."
   location: Missoula, MT
   avatar: "assets/images/profile.png"
   links:
@@ -103,6 +103,9 @@ author:
     - label: "StackOverflow"
       icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/story/luizlopes"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/theprivileges"
 
 # jekyll-compose defaults
 jekyll_compose:
