@@ -1,12 +1,13 @@
 version: '3'
 services: 
     wickeddeveloper:
-        image: fleek/jekyll
+        image: jekyll/jekyll:3
         environment: 
             - TZ=America/Denver
+            - JEKYLL_VERSION=3.9.0
         volumes: 
             - '.:/srv/jekyll'
         ports: 
             - 4000:4000
             - 35729:35729
-        command: 'jekyll serve -l --drafts' # Builds site and reloads browser
+        command: 'jekyll serve -l -D' # Builds site and reloads browser
