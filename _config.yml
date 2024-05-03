@@ -16,7 +16,7 @@
 title: Wicked Developer
 email: luiz@wickeddeveloper.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Random musings of a Software Engineer living in Missoula, Montana.
+  The random musings of a software engineer living in Montana, USA.  Writing about programming, JavaScript, bitcoin, privacy, economics and philosophy.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wickeddeveloper.com" # the base hostname & protocol for your site, e.g. http://example.com
 locale: "en-US"
@@ -34,7 +34,7 @@ social:
   links:
     - https://github.com/theprivileges
     - https://luizlopes.io
-    - https://stackoverflow.com/story/luizlopes
+    - https://meta.stackoverflow.com/users/403434/theprivileges
     - https://angel.co/luiz-lopes
     - https://dev.to/theprivileges
     - https://codesandbox.io/u/theprivileges
@@ -51,7 +51,7 @@ repository: theprivileges/wickeddeveloper.com # the GitHub repo name for your pr
 permalink: /:categories/:title
 paginate: 5
 paginate_path: /page:num/
-timezone: america/denver
+timezone: "America/Denver"
 
 include:
   - _pages
@@ -59,7 +59,7 @@ include:
 
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "mmistakes/minimal-mistakes@4.25.1"
 # theme: minimal-mistakes-jekyll
 
 plugins:
@@ -94,7 +94,7 @@ plugins:
 author:
   name: "Luiz Lopes"
   bio: "Born helpless, nude and unable to provide for myself, I BUIDL in order to overcome the aforementioned predicaments."
-  location: Missoula, MT
+  location: Montana, USA
   avatar: "assets/images/profile.png"
   links:
     - label: "Website"
@@ -107,11 +107,11 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/theprivileges"
     - label: "StackOverflow"
-      icon: "fab fa-fw fa-stack-overflow"
-      url: "https://stackoverflow.com/story/luizlopes"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/theprivileges"
+      icon: "fab fa-stack-overflow"
+      url: "https://meta.stackoverflow.com/users/403434/theprivileges"
+    - label: "Nostr"
+      icon: "fas fa-fw fa-message"
+      url: "nostr:nprofile1qqsgrkzmdpmwp4sjz05uufdkps74866u4t3nndsn2cncvsp6cmft7fs955keq"
 
 # jekyll-compose defaults
 jekyll_compose:
